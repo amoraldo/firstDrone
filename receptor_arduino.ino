@@ -24,10 +24,10 @@ ccw    cw
 #define CE_PIN 8
 #define CSN_PIN 10
  
-#define Motor1 2
-#define Motor2 3
-#define Motor3 4
-#define Motor4 5
+#define Motor1 3
+#define Motor2 5
+#define Motor3 6
+#define Motor4 9
 
 //Definimos los centros de los sticks
 int o_Stick1 = 522;
