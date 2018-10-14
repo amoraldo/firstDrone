@@ -1,36 +1,3 @@
-dio.openWritingPipe(direccion);
- 
- }
-
- void loop()
-{ 
-
- datos[0]=analogRead(0)* (5.0 / 1023.0);;
- datos[1]=millis();
- datos[2]=3.14;
- //enviamos los datos
- bool ok = radio.write(datos, sizeof(datos));
-  
-  if(ok)
-  {
-     Serial.print("Datos enviados: "); 
-     Serial.print(datos[0]); 
-     Serial.print(" , "); 
-     Serial.print(datos[1]); 
-     Serial.print(" , "); 
-     Serial.println(datos[2]); 
-  }
-  else
-  
-  {
-     Serial.println("no se ha podido enviar");
-     
-  }
-  
-  delay(1000);
-}
- 
-
 /*
 UVIDrone: Julio 2018
 
